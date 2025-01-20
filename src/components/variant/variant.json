@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_variant_variants",
+  "info": {
+    "displayName": "variant",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "required": true,
+      "customField": "plugin::color-picker.color"
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "s",
+        "m",
+        "x",
+        "xl",
+        "xxl"
+      ],
+      "required": true
+    },
+    "quantity": {
+      "type": "integer",
+      "required": true
+    },
+    "images": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
